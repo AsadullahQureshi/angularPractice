@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TodosComponent } from './Mycomponents/todos/todos.component';
 import { NavbarComponent } from './Mycomponents/navbar/navbar.component';
 import { FooterComponent } from './Mycomponents/footer/footer.component';
+import { TodosItemComponent } from './Mycomponents/todos-item/todos-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    TodosItemComponent
   ],
   imports: [
     BrowserModule,
