@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddTodoComponent implements OnInit {
 
+  title:string |undefined;
+  description:string| undefined;
+  img:string|undefined;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  onSubmit(){
+
   }
 
 }

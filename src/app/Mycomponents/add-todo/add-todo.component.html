@@ -5,13 +5,19 @@
         
     <div class="row">
         
-                <form>
+                <form (ngSubmit)="onSubmit()">
                         <div class="col-auto">
-                            
-                            <input type="text" class="form-control" id="item" placeholder="list add">
+                            <label for="">Title</label>
+                            <input type="text" [(ngModel)]="title" name="title" class="form-control" id="title" placeholder="list add">
                         </div>
                         <div class="col-auto">
-                                <button type="submit" class="btn btn-primary">Add</button>
+                                <label for="">Description</label>
+                            
+                                <input type="text" [(ngModel)]="description" name="desc" class="form-control" id="description" placeholder="list add">
+                            </div>
+    
+                        <div class="col-auto">
+                                <button type="submit" class="btn btn-primary">Add todo</button>
                         </div>
                     </form>
         
